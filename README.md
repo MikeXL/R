@@ -3,7 +3,8 @@ R
 
 Something about R
 
-Google has an [R Style Guide][1].
+Google has an [R Style Guide][1]. 
+
 Books: 
 - Introductory R 
 - Practical Data Science in R
