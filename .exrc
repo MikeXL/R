@@ -4,9 +4,6 @@ set sw=4
 set hls
 set ruler
 
-# fire up another terminal and have R session running
-# then all you need to do is hit <F6> on the line of your R code
-# currently not supporting multiple line yet
 function RCmd(cmd)
 	let cmd = a:cmd
     let cmd = substitute(cmd, "\\", '\\\', 'g')
@@ -16,4 +13,4 @@ function RCmd(cmd)
 	return 1
 endfunction
 
-map <F6> :call RCmd(getline('.'))<CR>
+map <silent> <F6> :call RCmd(getline('.'))<CR>
